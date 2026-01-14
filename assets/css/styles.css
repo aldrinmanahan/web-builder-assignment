@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: #121212;
+}
+html,
+body {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: #121212;
+}
+i {
+    color: #FFF;
+}
+.carousel-control-next {
+    right: -120px;
+}
+.carousel-control-prev {
+    left: -120px;
+}
+.sectionHeading {
+    font-family: "DM Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+}
+#aboutSection,
+#servicesSection,
+#featuredSection,
+#partnersSection,
+#contactSection,
+#footerSection {
+    padding: 40px;
+}
+.navbar {
+    background-color: #FFF;
+}
+.navbar-brand img {
+    height: 100px;
+    width: auto;
+}
+.nav-link, .dropdown-item {
+    font-family: "Noto Serif", serif;
+}
+.nav-link {
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-item {
+    padding: 0px 10px;
+}
+#heroSection {
+    height: 100vh;
+    position: relative; 
+    overflow: hidden;
+}
+#heroVideo {
+    position: absolute;
+    filter: blur(2px) brightness(0.6);
+}
+.heroContainer {
+    position: relative;
+    color: #FFF;
+    top: 15rem;
+}
+.heroHeading {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.heroText {
+    color: #FFF;
+    font-family: "Noto Serif", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.heroBtn {
+    background-color: #FFF;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 9999px;
+}
+.heroBtn:hover {
+    background-color: #F0F0F0;
+    color: #121212;
+}
+.realtorImg {
+    height: 30rem;
+    width: auto; 
+    margin: auto;
+    margin-bottom: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+#aboutSection {
+    background-color: #FFF;
+}
+.aboutHeading {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-left: 5px solid;
+    padding-left: 20px;
+}
+.aboutText {
+    font-size: 18px;
+    line-height: 1.8;
+}
+.aboutBtn {
+    background-color: #12100E;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 9999px;
+    text-transform: uppercase;
+}
+.aboutBtn:hover {
+    background-color: #212121;
+    color: #FFF;
+}
+
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+.shine-effect:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%; 
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  
+  /* Applying the animation */
+  animation: shine-sweep 3s infinite;
+}
+
+/* Defining the movement */
+@keyframes shine-sweep {
+  0% {
+    left: -150%;
+  }
+  20% {
+    left: 150%; /* The shine happens quickly */
+  }
+  100% {
+    left: 150%; /* The shine stays off-screen for the remaining time */
+  }
+}
+#servicesSection {
+    background: url("../images/servicesBg.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+#servicesSection .sectionHeading {
+    color: #FFF;
+}
+.servicesCard {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+.servicesCard:hover {
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.9); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+    transition: 0.5s ease-in;
+}
+.cardHeading,
+.cardPrice {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.cardContent {
+    padding: 0px 15px;
+}
+.cardText {
+    font-size: 1rem;
+    text-align: left;
+    text-wrap: balance;
+    width: 95%;
+    margin: auto;
+    color: #FFF;
+}
+.cardFeature {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.1rem;
+    color: #808075;
+    text-transform: uppercase;
+}
+#featuredSection {
+    background-color: #F7F9FA;
+}
+#featuredSection .cardHeading, 
+#featuredSection .cardPrice {
+    font-family: "Noto Serif", serif;
+}
+.featuredCard {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    border: none;
+    border-radius: 0px;
+}
+.featuredCardBody {
+    padding: 0px;
+}
+.cardImg {
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+#searchListingSection {
+    height: 90vh;
+    position: relative; 
+    overflow: hidden;
+}
+#searchListingVideo {
+    position: absolute;
+    filter: blur(2px) brightness(0.6);
+}
+.searchContainer {
+    position: relative;
+    background-color: #FFF;
+    color: #121212;
+    top: 3rem;
+    padding: 30px;
+    border-radius: 20px;
+}
+.searchHeading,
+.contactHeading {
+    font-family: "Noto Serif", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.form-label,
+.value {
+    font-family: "Noto Serif", serif;
+}
+.form-select {
+    font-family: "Noto Serif", serif;
+    color: #808075;
+}
+.form-select:focus, 
+.form-control:focus {
+    border-color: #121212; 
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); /* Subtle glow using RGBA of border-color */
+}
+
+.form-control-underline {
+    border: none;
+    border-bottom: 2px solid #CCC; 
+    border-radius: 0;           
+    padding-left: 0;            
+    padding-right: 0;
+    background-color: transparent;
+    transition: border-color 0.5s ease;
+    width: 90%;
+}
+
+.form-control-underline:focus {
+    outline: none;
+    box-shadow: none; 
+    border-color: #121212;      
+    background-color: transparent;
+}
+input {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+.searchBtn {
+    background-color: #12100E;
+    color: #FFF;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    text-align: right;
+}
+.searchBtn:hover {
+    background-color: #212121;
+    color: #FFF;
+}
+#partnersSection {
+    background-color: #FFF;
+}
+.partnerLogo {
+    height: 5rem;
+    padding: 0px 15px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+.partnerLogo:hover {
+    filter: grayscale(0%);
+    transition: filter 0.3s ease;
+}
+#contactSection {
+    background-color: #FFF;   
+}
+#contactSection i {
+    color: #121212;
+}
+#contactSection .fa-whatsapp {
+    color: #FFF;
+}
+#contactSection .form-label {
+    font-family: "Inter", sans-serif;
+}
+.contactText {
+    font-family: "Noto Serif", serif;
+    width: 90%;
+}
+.contactBtn {
+    background-color: #46C755;
+    color: #FFF;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 9999px;
+    text-transform: uppercase;
+}
+.contactBtn:hover {
+    background-color: #21C45D;
+    color: #FFF;
+}
+.submitBtn {
+    background-color: #12100E;
+    color: #FFF;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.submitBtn:hover {
+    background-color: #212121;
+    color: #FFF;
+}
+#footerSection {
+    height: 80vh;
+    position: relative;
+    background: linear-gradient(to top, 
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.9) 50%,
+        rgba(0, 0, 0, 1) 100% 
+    ), 
+    url("../images/footerBg.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+.footerTitle {
+    font-family: "Noto Serif", serif;
+    color: #F0F0F0;
+    font-size: 1.5rem;
+}
+.footerText,
+.footerText a,
+.footerPlaces a {
+    font-family: "Noto Serif", serif;
+    color: #F0F0F0;
+    font-size: 1rem;
+}
+.footerPlaces a:hover {
+    font-weight: 500;
+    border-bottom: 1px solid #F0F0F0;
+}
+.footerSocials {
+    font-size: 1.5rem;
+    color: #CCC;
+}
+.footerSocials:hover {
+    color: #F0F0F0;
+}
+.footerCopyright {
+    font-family: "Noto Serif", serif;
+    color: #CCC;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 575.98px) { 
+    .navbar-brand img {
+        height: 60px;
+        width: 100%;
+    }
+    .heroHeading {
+        font-weight: 600;
+    }
+    .heroText {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    #aboutSection, 
+    #servicesSection, 
+    #featuredSection, 
+    #partnersSection, 
+    #contactSection, 
+    #footerSection {
+        padding: 20px 0px;
+    }
+    .realtorImg {
+        width: 100%;
+    }
+    .aboutText {
+        font-size: 1.1rem;
+    }
+    .aboutBtn,
+    .submitBtn,
+    .contactBtn,
+    .fa-whatsapp {
+        display: flex;
+        margin: auto;
+    }
+    .sectionHeading {
+        font-size: 2rem;
+    }
+    .card-body {
+        padding: 20px 10px;
+    }
+    .contactText {
+        width: 100%;
+    }
+    .searchHeading, .contactHeading {
+        text-align: center;
+    }
+    .partnerLogo {
+        height: 3.5rem;
+    }
+    #footerSection {
+        height: 65vh;
+    }
+}
